@@ -20,7 +20,7 @@
                 
             }*/
         $('#register').on('click', function () {
-            setHash('register');
+            /*setHash('register');*/
         });
         $('#login').on('click', function () {
             setHash('login');
