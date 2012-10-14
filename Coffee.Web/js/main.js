@@ -14,8 +14,6 @@
             if (data.IsSuccess) {
                 for (var i = 0; i < data.Data.length; i++) {
                     var item = data.Data[i];
-                    ;
-                    ;
                     $(".news-block ul").append(sFormat("<li>{0} {1} {2} {3}</li>", [item.Subject, item.Description, item.CreatedAt, item.UpdatedAt]));
                 }
             }
