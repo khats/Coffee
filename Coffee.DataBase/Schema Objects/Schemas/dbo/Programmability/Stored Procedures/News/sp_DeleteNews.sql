@@ -1,0 +1,13 @@
+﻿CREATE PROCEDURE [dbo].[sp_DeleteNews]
+	@NewsId UNIQUEIDENTIFIER
+AS
+BEGIN
+	DELETE FROM News WHERE NewsId = @NewsId
+
+	IF (@@ERROR <> 0 OR @@ROWCOUNT = 0)
+	BEGIN
+		RETURN 0
+	END
+
+	RETURN 1
+END

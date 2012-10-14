@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[Log]
+(
+	[LogId] INT NOT NULL PRIMARY KEY IDENTITY,
+	[Component] NVARCHAR(64) NOT NULL,
+	[Type] INT NOT NULL,
+	[Message] NVARCHAR(MAX) NOT NULL,
+	[Exception] VARBINARY(MAX) NULL, 
+    [CreatedAt] DATETIME NOT NULL DEFAULT (getdate())
+)

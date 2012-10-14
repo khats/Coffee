@@ -1,0 +1,538 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="8dbb0f3e-a532-4993-8bdd-a5a24682da36"
+  name="Coffee.ModelingProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="5f7fd0d3-35af-4036-847b-05a23279abaf"
+        name="Администратор"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="cf1617bb-20c0-4874-9942-2360f59bc174"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="f6cfd7ba-d42b-4186-b563-8c786e2cd949"
+              LastKnownName="Пользователь"
+              LastKnownLocation="Coffee.ModelingProject.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="79c04109-04d0-40b7-9e54-608ed8d1e5cb"
+            isDerived="false"
+            sourceEndRoleName="Администратор"
+            targetEndRoleName="Просмотр информации по платежам"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="df23a0d1-897e-413f-b888-96696f65e507"
+              LastKnownName="Просмотр информации по платежам"
+              LastKnownLocation="Coffee.ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="be01c4c4-d758-4c59-aa18-25ad4944123c"
+                  name="Администратор"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d094db4c-1f67-43eb-9615-5777ce26206b"
+                  name="Просмотр информации по платежам"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="cc08353d-8bec-459b-a1dd-6f9270ab7d94"
+            isDerived="false"
+            sourceEndRoleName="Администратор"
+            targetEndRoleName="Управление новостями"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="73fa8257-6a44-4325-a9ec-3536519fdab1"
+              LastKnownName="Управление новостями"
+              LastKnownLocation="Coffee.ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="549bd9f4-7aec-43cf-899d-62e11c472f15"
+                  name="Администратор"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0ebd527f-f9c7-4fbb-a127-f8abf8a7c728"
+                  name="Управление новостями"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="74fb070d-b4bd-4ce1-848c-cb22dacd7b25"
+            isDerived="false"
+            sourceEndRoleName="Администратор"
+            targetEndRoleName="Управление пользователями"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="0cafdd78-250b-4785-a3ce-5725b0bc7aee"
+              LastKnownName="Управление пользователями"
+              LastKnownLocation="Coffee.ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4ae5ee07-0a5d-49a4-8c68-cdaf43a8a3a8"
+                  name="Администратор"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="676888c7-e92c-4a0d-8627-8abd1e275f58"
+                  name="Управление пользователями"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="f6cfd7ba-d42b-4186-b563-8c786e2cd949"
+        name="Пользователь"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="e87d4cb7-824c-40bf-8764-21d59a506eca"
+            isDerived="false"
+            sourceEndRoleName="Пользователь"
+            targetEndRoleName="Регистрация"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a585bc9d-06ac-4aa6-a9fc-7884b3cad27d"
+              LastKnownName="Регистрация"
+              LastKnownLocation="Coffee.ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5ec63549-e39c-4984-8d7c-9dbe80b511aa"
+                  name="Пользователь"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3b050c6e-9c71-49e1-a813-7f1619f1cb6d"
+                  name="Регистрация"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4a27ba59-8439-4435-b4a4-d277f1be05d4"
+            isDerived="false"
+            sourceEndRoleName="Пользователь"
+            targetEndRoleName="Просмотр новостей и информации"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5cfb38f4-be08-4735-a8c9-27685d39990f"
+              LastKnownName="Просмотр новостей и информации"
+              LastKnownLocation="Coffee.ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7f7ecf60-cad6-4137-b571-fcb0e9d22841"
+                  name="Пользователь"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bfacbaeb-9ba3-47d2-ab70-a627ba22e295"
+                  name="Просмотр новостей и информации"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="b6f8b2d3-6511-4aaf-8ccf-b5c38a850a19"
+        name="Клиент"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="d05190f2-74bf-402d-9620-08ea6f682750"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="f6cfd7ba-d42b-4186-b563-8c786e2cd949"
+              LastKnownName="Пользователь"
+              LastKnownLocation="Coffee.ModelingProject.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="ed979192-bf37-4636-8617-fcaf3f609a4f"
+            isDerived="false"
+            sourceEndRoleName="Клиент"
+            targetEndRoleName="Авторизация"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="03453c18-8a42-484c-a360-072e9b09721a"
+              LastKnownName="Авторизация"
+              LastKnownLocation="Coffee.ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="49261065-2460-460b-8421-d0c2ff246885"
+                  name="Клиент"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3b6b05a9-82a9-4201-8fc4-60fe7cd5a3f4"
+                  name="Авторизация"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="1b37f3da-577d-498d-ac68-3b7952e348e8"
+            isDerived="false"
+            sourceEndRoleName="Клиент"
+            targetEndRoleName="Клиент"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="b6f8b2d3-6511-4aaf-8ccf-b5c38a850a19"
+              LastKnownName="Клиент"
+              LastKnownLocation="Coffee.ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="45d13294-dacf-4c78-8d2f-dfbe09a2f8e3"
+                  name="Клиент"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="54bd8edd-5697-4b93-bb83-a6e868ae44fb"
+                  name="Клиент"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="33c099c9-2909-41a6-a05b-1f98c3ec9b6f"
+            isDerived="false"
+            sourceEndRoleName="Клиент"
+            targetEndRoleName="Просмотр новостей и информации"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5cfb38f4-be08-4735-a8c9-27685d39990f"
+              LastKnownName="Просмотр новостей и информации"
+              LastKnownLocation="Coffee.ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f1221bc5-c519-4f6b-9a8e-1aead446991f"
+                  name="Клиент"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="577ef814-5a4b-4f74-940a-6ecbd20af0f0"
+                  name="Просмотр новостей и информации"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="41c0087c-eeca-49c2-b251-661ce37b6c1a"
+            isDerived="false"
+            sourceEndRoleName="Клиент"
+            targetEndRoleName="Совершение платежей"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6c3bbc85-93d8-4895-a288-976283338f51"
+              LastKnownName="Совершение платежей"
+              LastKnownLocation="Coffee.ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="49e2491d-f8b0-400f-81bc-63336ff0205d"
+                  name="Клиент"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b6ad4892-4056-4ed9-894f-49a567a20c4b"
+                  name="Совершение платежей"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="68f6d9e2-102a-4c89-a803-d9dad24a7746"
+            isDerived="false"
+            sourceEndRoleName="Клиент"
+            targetEndRoleName="Просмотр информации по платежам"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="df23a0d1-897e-413f-b888-96696f65e507"
+              LastKnownName="Просмотр информации по платежам"
+              LastKnownLocation="Coffee.ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2a807f6d-182c-4ac9-b9e2-0aaed5fc8a8c"
+                  name="Клиент"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7810d1ad-c73b-4858-9cc9-be0fe7d0dc7c"
+                  name="Просмотр информации по платежам"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5cfb38f4-be08-4735-a8c9-27685d39990f"
+        name="Просмотр новостей и информации"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a585bc9d-06ac-4aa6-a9fc-7884b3cad27d"
+        name="Регистрация"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="03453c18-8a42-484c-a360-072e9b09721a"
+        name="Авторизация"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6c3bbc85-93d8-4895-a288-976283338f51"
+        name="Совершение платежей"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="df23a0d1-897e-413f-b888-96696f65e507"
+        name="Просмотр информации по платежам"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="73fa8257-6a44-4325-a9ec-3536519fdab1"
+        name="Управление новостями"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0cafdd78-250b-4785-a3ce-5725b0bc7aee"
+        name="Управление пользователями"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5fb82835-5e17-4224-bde9-c22c2841ea60"
+        name="UseCase1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

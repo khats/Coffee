@@ -1,0 +1,330 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D6A125D3-560E-4733-B800-9E0DBF5A2151}"
+	ProjectSection(SolutionItems) = preProject
+		documents\Specification.v.1.1.doc = documents\Specification.v.1.1.doc
+		documents\Specification.v.1.2.doc = documents\Specification.v.1.2.doc
+		documents\Specification.v.1.4.doc = documents\Specification.v.1.4.doc
+		documents\Specification.v.1.5.doc = documents\Specification.v.1.5.doc
+		documents\Функционал.docx = documents\Функционал.docx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataBase", "DataBase", "{B6ED7618-CAEB-47A2-A175-5C4292688B62}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{CC92AB97-2D6E-4733-AD36-278F6F7A3501}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backend", "Backend", "{9720BB5E-67BE-4BAB-80F9-E456B1C92DE2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{F0C1F76D-4419-47E4-B0D3-EA913E067053}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "News", "News", "{AF4674B8-F38E-4A93-860E-DDA15C7B171E}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Coffee.DataBase", "Coffee.DataBase\Coffee.DataBase.sqlproj", "{E81CECAD-B451-4E89-AF3F-B7763E611892}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coffee.Controllers", "Coffee.Controllers\Coffee.Controllers.csproj", "{DD0E9F26-AFD9-4527-8FDC-6F655A551142}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coffee.News.DataAccess", "Coffee.News.DataAccess\Coffee.News.DataAccess.csproj", "{507B51B5-B180-4BC6-A3CB-002B4B71FE1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coffee.News.Domain", "Coffee.News.Domain\Coffee.News.Domain.csproj", "{26926E27-98C2-4916-8C8D-EC90810523C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coffee.News.Service", "Coffee.News.Service\Coffee.News.Service.csproj", "{FDEB3EA5-C7C7-456A-8EEF-2B8D21900EA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coffee.Web", "Coffee.Web\Coffee.Web.csproj", "{FB921521-8F6F-46F0-9139-C13BEE8227BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coffee.Shared", "Coffee.Shared\Coffee.Shared.csproj", "{38573BD0-C4E7-49BE-A90A-D0DDC46B6F79}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modeling", "Modeling", "{5E2E65BA-4C63-4E51-AFD3-6153D1D2B01D}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Coffee.ModelingProject", "Coffee.ModelingProject\Coffee.ModelingProject.modelproj", "{92725DD6-B42B-4DB6-B2F5-4DB66C036534}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{D91EF530-C697-474D-AA25-F7AB4F258626}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HelpDesk", "HelpDesk", "{80AB7D9A-5CFE-48A7-AC35-342D844022C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coffee.HelpDesk.Service", "Coffee.HelpDesk.Service\Coffee.HelpDesk.Service.csproj", "{C0CD2359-7248-4E7D-98E0-6698C341DE6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coffee.HelpDesk.Domain", "Coffee.HelpDesk.Domain\Coffee.HelpDesk.Domain.csproj", "{93DF997D-0B20-492E-A4EE-6708C7BBE20F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Account", "Account", "{260C5B19-5D63-46CA-AAFD-A51F818A3A4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coffee.Account.Domain", "Coffee.Account.Domain\Coffee.Account.Domain.csproj", "{09684F4C-6824-4A5F-9B8B-7AEAD55707AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coffee.Account.DataAccess", "Coffee.Account.DataAccess\Coffee.Account.DataAccess.csproj", "{E59CF786-4758-4B9F-9F4E-DD4F8D8B83AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coffee.Account.Service", "Coffee.Account.Service\Coffee.Account.Service.csproj", "{941FCE7D-FD73-4178-9507-DC6C9EA3AB06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coffee.RemoteService", "Coffee.RemoteService\Coffee.RemoteService.csproj", "{C7D48561-FA8F-40DA-A7B5-844D010565FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coffee.HelpDesk.DataAccess", "Coffee.HelpDesk.DataAccess\Coffee.HelpDesk.DataAccess.csproj", "{CF2DEF9F-028D-4E87-9DD8-293ACEB7B307}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Administer", "Administer", "{275742D3-EE76-4CB5-8C62-9831830A0B09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coffee.Administer.DataAccess", "Coffee.Administer.DataAccess\Coffee.Administer.DataAccess.csproj", "{B2D69EFD-DE0C-4813-8F62-E89553C80D92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coffee.Administer.Domain", "Coffee.Administer.Domain\Coffee.Administer.Domain.csproj", "{6FAF0285-1232-484D-A883-BD3B03F493BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coffee.Administer.Service", "Coffee.Administer.Service\Coffee.Administer.Service.csproj", "{49E139AF-9DF2-4CC2-B44D-EA723F273519}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CardAccount", "CardAccount", "{F7522225-B9BF-46A4-9948-5E6AC0B30A8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coffee.CardAccount.DataAccess", "Coffee.CardAccount.DataAccess\Coffee.CardAccount.DataAccess.csproj", "{EC87CC8F-5E64-423E-B500-E12BEBA5C5BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coffee.CardAccount.Domain", "Coffee.CardAccount.Domain\Coffee.CardAccount.Domain.csproj", "{94F73103-F448-48F9-AC1C-CE72515BC7BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coffee.CardAccount.Service", "Coffee.CardAccount.Service\Coffee.CardAccount.Service.csproj", "{F941C1B2-D3D4-4B59-85E4-8429DEE8912A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Currencies", "Currencies", "{FFC19ECE-F7D4-4EFC-B383-B5FDBD4BC164}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coffee.Currencies.Domain", "Coffee.Currencies.Domain\Coffee.Currencies.Domain.csproj", "{9AA3BFA4-D34B-4F85-A772-724D6272D702}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coffee.Currencies.Service", "Coffee.Currencies.Service\Coffee.Currencies.Service.csproj", "{83D41E77-D924-458E-A3CA-FDF2A20827E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coffee.Currencies.DataAccess", "Coffee.Currencies.DataAccess\Coffee.Currencies.DataAccess.csproj", "{78C4F872-64F4-4588-A716-B636D4A89A32}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Payments", "Payments", "{256F06A9-224E-4AFA-B2B1-37E4A1D3AE58}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 25
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://195.50.21.74:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Coffee.Controllers\\Coffee.Controllers.csproj
+		SccProjectTopLevelParentUniqueName1 = Coffee.sln
+		SccProjectName1 = Coffee.Controllers
+		SccLocalPath1 = Coffee.Controllers
+		SccProjectUniqueName2 = Coffee.News.DataAccess\\Coffee.News.DataAccess.csproj
+		SccProjectTopLevelParentUniqueName2 = Coffee.sln
+		SccProjectName2 = Coffee.News.DataAccess
+		SccLocalPath2 = Coffee.News.DataAccess
+		SccProjectUniqueName3 = Coffee.News.Domain\\Coffee.News.Domain.csproj
+		SccProjectTopLevelParentUniqueName3 = Coffee.sln
+		SccProjectName3 = Coffee.News.Domain
+		SccLocalPath3 = Coffee.News.Domain
+		SccProjectUniqueName4 = Coffee.News.Service\\Coffee.News.Service.csproj
+		SccProjectTopLevelParentUniqueName4 = Coffee.sln
+		SccProjectName4 = Coffee.News.Service
+		SccLocalPath4 = Coffee.News.Service
+		SccProjectUniqueName5 = Coffee.DataBase\\Coffee.DataBase.sqlproj
+		SccProjectTopLevelParentUniqueName5 = Coffee.sln
+		SccProjectName5 = Coffee.DataBase
+		SccLocalPath5 = Coffee.DataBase
+		SccProjectUniqueName6 = Coffee.Web\\Coffee.Web.csproj
+		SccProjectTopLevelParentUniqueName6 = Coffee.sln
+		SccProjectName6 = Coffee.Web
+		SccLocalPath6 = Coffee.Web
+		SccProjectUniqueName7 = Coffee.Shared\\Coffee.Shared.csproj
+		SccProjectTopLevelParentUniqueName7 = Coffee.sln
+		SccProjectName7 = Coffee.Shared
+		SccLocalPath7 = Coffee.Shared
+		SccProjectUniqueName8 = Coffee.ModelingProject\\Coffee.ModelingProject.modelproj
+		SccProjectTopLevelParentUniqueName8 = Coffee.sln
+		SccProjectName8 = Coffee.ModelingProject
+		SccLocalPath8 = Coffee.ModelingProject
+		SccProjectUniqueName9 = Coffee.HelpDesk.Service\\Coffee.HelpDesk.Service.csproj
+		SccProjectTopLevelParentUniqueName9 = Coffee.sln
+		SccProjectName9 = Coffee.HelpDesk.Service
+		SccLocalPath9 = Coffee.HelpDesk.Service
+		SccProjectUniqueName10 = Coffee.HelpDesk.Domain\\Coffee.HelpDesk.Domain.csproj
+		SccProjectTopLevelParentUniqueName10 = Coffee.sln
+		SccProjectName10 = Coffee.HelpDesk.Domain
+		SccLocalPath10 = Coffee.HelpDesk.Domain
+		SccProjectUniqueName11 = Coffee.Account.Domain\\Coffee.Account.Domain.csproj
+		SccProjectTopLevelParentUniqueName11 = Coffee.sln
+		SccProjectName11 = Coffee.Account.Domain
+		SccLocalPath11 = Coffee.Account.Domain
+		SccProjectUniqueName12 = Coffee.Account.DataAccess\\Coffee.Account.DataAccess.csproj
+		SccProjectTopLevelParentUniqueName12 = Coffee.sln
+		SccProjectName12 = Coffee.Account.DataAccess
+		SccLocalPath12 = Coffee.Account.DataAccess
+		SccProjectUniqueName13 = Coffee.Account.Service\\Coffee.Account.Service.csproj
+		SccProjectTopLevelParentUniqueName13 = Coffee.sln
+		SccProjectName13 = Coffee.Account.Service
+		SccLocalPath13 = Coffee.Account.Service
+		SccProjectUniqueName14 = Coffee.RemoteService\\Coffee.RemoteService.csproj
+		SccProjectTopLevelParentUniqueName14 = Coffee.sln
+		SccProjectName14 = Coffee.RemoteService
+		SccLocalPath14 = Coffee.RemoteService
+		SccProjectUniqueName15 = Coffee.HelpDesk.DataAccess\\Coffee.HelpDesk.DataAccess.csproj
+		SccProjectTopLevelParentUniqueName15 = Coffee.sln
+		SccProjectName15 = Coffee.HelpDesk.DataAccess
+		SccLocalPath15 = Coffee.HelpDesk.DataAccess
+		SccProjectUniqueName16 = Coffee.Administer.DataAccess\\Coffee.Administer.DataAccess.csproj
+		SccProjectTopLevelParentUniqueName16 = Coffee.sln
+		SccProjectName16 = Coffee.Administer.DataAccess
+		SccLocalPath16 = Coffee.Administer.DataAccess
+		SccProjectUniqueName17 = Coffee.Administer.Domain\\Coffee.Administer.Domain.csproj
+		SccProjectTopLevelParentUniqueName17 = Coffee.sln
+		SccProjectName17 = Coffee.Administer.Domain
+		SccLocalPath17 = Coffee.Administer.Domain
+		SccProjectUniqueName18 = Coffee.Administer.Service\\Coffee.Administer.Service.csproj
+		SccProjectTopLevelParentUniqueName18 = Coffee.sln
+		SccProjectName18 = Coffee.Administer.Service
+		SccLocalPath18 = Coffee.Administer.Service
+		SccProjectUniqueName19 = Coffee.CardAccount.DataAccess\\Coffee.CardAccount.DataAccess.csproj
+		SccProjectTopLevelParentUniqueName19 = Coffee.sln
+		SccProjectName19 = Coffee.CardAccount.DataAccess
+		SccLocalPath19 = Coffee.CardAccount.DataAccess
+		SccProjectUniqueName20 = Coffee.CardAccount.Domain\\Coffee.CardAccount.Domain.csproj
+		SccProjectTopLevelParentUniqueName20 = Coffee.sln
+		SccProjectName20 = Coffee.CardAccount.Domain
+		SccLocalPath20 = Coffee.CardAccount.Domain
+		SccProjectUniqueName21 = Coffee.CardAccount.Service\\Coffee.CardAccount.Service.csproj
+		SccProjectTopLevelParentUniqueName21 = Coffee.sln
+		SccProjectName21 = Coffee.CardAccount.Service
+		SccLocalPath21 = Coffee.CardAccount.Service
+		SccProjectUniqueName22 = Coffee.Currencies.Domain\\Coffee.Currencies.Domain.csproj
+		SccProjectTopLevelParentUniqueName22 = Coffee.sln
+		SccProjectName22 = Coffee.Currencies.Domain
+		SccLocalPath22 = Coffee.Currencies.Domain
+		SccProjectUniqueName23 = Coffee.Currencies.Service\\Coffee.Currencies.Service.csproj
+		SccProjectTopLevelParentUniqueName23 = Coffee.sln
+		SccProjectName23 = Coffee.Currencies.Service
+		SccLocalPath23 = Coffee.Currencies.Service
+		SccProjectUniqueName24 = Coffee.Currencies.DataAccess\\Coffee.Currencies.DataAccess.csproj
+		SccProjectTopLevelParentUniqueName24 = Coffee.sln
+		SccProjectName24 = Coffee.Currencies.DataAccess
+		SccLocalPath24 = Coffee.Currencies.DataAccess
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E81CECAD-B451-4E89-AF3F-B7763E611892}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E81CECAD-B451-4E89-AF3F-B7763E611892}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E81CECAD-B451-4E89-AF3F-B7763E611892}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E81CECAD-B451-4E89-AF3F-B7763E611892}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E81CECAD-B451-4E89-AF3F-B7763E611892}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E81CECAD-B451-4E89-AF3F-B7763E611892}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{DD0E9F26-AFD9-4527-8FDC-6F655A551142}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD0E9F26-AFD9-4527-8FDC-6F655A551142}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD0E9F26-AFD9-4527-8FDC-6F655A551142}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD0E9F26-AFD9-4527-8FDC-6F655A551142}.Release|Any CPU.Build.0 = Release|Any CPU
+		{507B51B5-B180-4BC6-A3CB-002B4B71FE1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{507B51B5-B180-4BC6-A3CB-002B4B71FE1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{507B51B5-B180-4BC6-A3CB-002B4B71FE1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{507B51B5-B180-4BC6-A3CB-002B4B71FE1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26926E27-98C2-4916-8C8D-EC90810523C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26926E27-98C2-4916-8C8D-EC90810523C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26926E27-98C2-4916-8C8D-EC90810523C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26926E27-98C2-4916-8C8D-EC90810523C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDEB3EA5-C7C7-456A-8EEF-2B8D21900EA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDEB3EA5-C7C7-456A-8EEF-2B8D21900EA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDEB3EA5-C7C7-456A-8EEF-2B8D21900EA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDEB3EA5-C7C7-456A-8EEF-2B8D21900EA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB921521-8F6F-46F0-9139-C13BEE8227BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB921521-8F6F-46F0-9139-C13BEE8227BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB921521-8F6F-46F0-9139-C13BEE8227BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB921521-8F6F-46F0-9139-C13BEE8227BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38573BD0-C4E7-49BE-A90A-D0DDC46B6F79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38573BD0-C4E7-49BE-A90A-D0DDC46B6F79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38573BD0-C4E7-49BE-A90A-D0DDC46B6F79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38573BD0-C4E7-49BE-A90A-D0DDC46B6F79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92725DD6-B42B-4DB6-B2F5-4DB66C036534}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92725DD6-B42B-4DB6-B2F5-4DB66C036534}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92725DD6-B42B-4DB6-B2F5-4DB66C036534}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92725DD6-B42B-4DB6-B2F5-4DB66C036534}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0CD2359-7248-4E7D-98E0-6698C341DE6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0CD2359-7248-4E7D-98E0-6698C341DE6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0CD2359-7248-4E7D-98E0-6698C341DE6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0CD2359-7248-4E7D-98E0-6698C341DE6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93DF997D-0B20-492E-A4EE-6708C7BBE20F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93DF997D-0B20-492E-A4EE-6708C7BBE20F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93DF997D-0B20-492E-A4EE-6708C7BBE20F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93DF997D-0B20-492E-A4EE-6708C7BBE20F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09684F4C-6824-4A5F-9B8B-7AEAD55707AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09684F4C-6824-4A5F-9B8B-7AEAD55707AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09684F4C-6824-4A5F-9B8B-7AEAD55707AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09684F4C-6824-4A5F-9B8B-7AEAD55707AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E59CF786-4758-4B9F-9F4E-DD4F8D8B83AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E59CF786-4758-4B9F-9F4E-DD4F8D8B83AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E59CF786-4758-4B9F-9F4E-DD4F8D8B83AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E59CF786-4758-4B9F-9F4E-DD4F8D8B83AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{941FCE7D-FD73-4178-9507-DC6C9EA3AB06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{941FCE7D-FD73-4178-9507-DC6C9EA3AB06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{941FCE7D-FD73-4178-9507-DC6C9EA3AB06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{941FCE7D-FD73-4178-9507-DC6C9EA3AB06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7D48561-FA8F-40DA-A7B5-844D010565FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7D48561-FA8F-40DA-A7B5-844D010565FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7D48561-FA8F-40DA-A7B5-844D010565FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7D48561-FA8F-40DA-A7B5-844D010565FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF2DEF9F-028D-4E87-9DD8-293ACEB7B307}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF2DEF9F-028D-4E87-9DD8-293ACEB7B307}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF2DEF9F-028D-4E87-9DD8-293ACEB7B307}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF2DEF9F-028D-4E87-9DD8-293ACEB7B307}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2D69EFD-DE0C-4813-8F62-E89553C80D92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2D69EFD-DE0C-4813-8F62-E89553C80D92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2D69EFD-DE0C-4813-8F62-E89553C80D92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2D69EFD-DE0C-4813-8F62-E89553C80D92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FAF0285-1232-484D-A883-BD3B03F493BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FAF0285-1232-484D-A883-BD3B03F493BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FAF0285-1232-484D-A883-BD3B03F493BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FAF0285-1232-484D-A883-BD3B03F493BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49E139AF-9DF2-4CC2-B44D-EA723F273519}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49E139AF-9DF2-4CC2-B44D-EA723F273519}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49E139AF-9DF2-4CC2-B44D-EA723F273519}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49E139AF-9DF2-4CC2-B44D-EA723F273519}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC87CC8F-5E64-423E-B500-E12BEBA5C5BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC87CC8F-5E64-423E-B500-E12BEBA5C5BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC87CC8F-5E64-423E-B500-E12BEBA5C5BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC87CC8F-5E64-423E-B500-E12BEBA5C5BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94F73103-F448-48F9-AC1C-CE72515BC7BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94F73103-F448-48F9-AC1C-CE72515BC7BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94F73103-F448-48F9-AC1C-CE72515BC7BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94F73103-F448-48F9-AC1C-CE72515BC7BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F941C1B2-D3D4-4B59-85E4-8429DEE8912A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F941C1B2-D3D4-4B59-85E4-8429DEE8912A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F941C1B2-D3D4-4B59-85E4-8429DEE8912A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F941C1B2-D3D4-4B59-85E4-8429DEE8912A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AA3BFA4-D34B-4F85-A772-724D6272D702}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AA3BFA4-D34B-4F85-A772-724D6272D702}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AA3BFA4-D34B-4F85-A772-724D6272D702}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AA3BFA4-D34B-4F85-A772-724D6272D702}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83D41E77-D924-458E-A3CA-FDF2A20827E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83D41E77-D924-458E-A3CA-FDF2A20827E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83D41E77-D924-458E-A3CA-FDF2A20827E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83D41E77-D924-458E-A3CA-FDF2A20827E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78C4F872-64F4-4588-A716-B636D4A89A32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78C4F872-64F4-4588-A716-B636D4A89A32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78C4F872-64F4-4588-A716-B636D4A89A32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78C4F872-64F4-4588-A716-B636D4A89A32}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E81CECAD-B451-4E89-AF3F-B7763E611892} = {B6ED7618-CAEB-47A2-A175-5C4292688B62}
+		{AF4674B8-F38E-4A93-860E-DDA15C7B171E} = {9720BB5E-67BE-4BAB-80F9-E456B1C92DE2}
+		{DD0E9F26-AFD9-4527-8FDC-6F655A551142} = {9720BB5E-67BE-4BAB-80F9-E456B1C92DE2}
+		{38573BD0-C4E7-49BE-A90A-D0DDC46B6F79} = {9720BB5E-67BE-4BAB-80F9-E456B1C92DE2}
+		{80AB7D9A-5CFE-48A7-AC35-342D844022C9} = {9720BB5E-67BE-4BAB-80F9-E456B1C92DE2}
+		{260C5B19-5D63-46CA-AAFD-A51F818A3A4B} = {9720BB5E-67BE-4BAB-80F9-E456B1C92DE2}
+		{275742D3-EE76-4CB5-8C62-9831830A0B09} = {9720BB5E-67BE-4BAB-80F9-E456B1C92DE2}
+		{F7522225-B9BF-46A4-9948-5E6AC0B30A8C} = {9720BB5E-67BE-4BAB-80F9-E456B1C92DE2}
+		{FFC19ECE-F7D4-4EFC-B383-B5FDBD4BC164} = {9720BB5E-67BE-4BAB-80F9-E456B1C92DE2}
+		{256F06A9-224E-4AFA-B2B1-37E4A1D3AE58} = {9720BB5E-67BE-4BAB-80F9-E456B1C92DE2}
+		{FB921521-8F6F-46F0-9139-C13BEE8227BB} = {F0C1F76D-4419-47E4-B0D3-EA913E067053}
+		{507B51B5-B180-4BC6-A3CB-002B4B71FE1C} = {AF4674B8-F38E-4A93-860E-DDA15C7B171E}
+		{26926E27-98C2-4916-8C8D-EC90810523C6} = {AF4674B8-F38E-4A93-860E-DDA15C7B171E}
+		{FDEB3EA5-C7C7-456A-8EEF-2B8D21900EA0} = {AF4674B8-F38E-4A93-860E-DDA15C7B171E}
+		{92725DD6-B42B-4DB6-B2F5-4DB66C036534} = {5E2E65BA-4C63-4E51-AFD3-6153D1D2B01D}
+		{C7D48561-FA8F-40DA-A7B5-844D010565FC} = {D91EF530-C697-474D-AA25-F7AB4F258626}
+		{C0CD2359-7248-4E7D-98E0-6698C341DE6D} = {80AB7D9A-5CFE-48A7-AC35-342D844022C9}
+		{93DF997D-0B20-492E-A4EE-6708C7BBE20F} = {80AB7D9A-5CFE-48A7-AC35-342D844022C9}
+		{CF2DEF9F-028D-4E87-9DD8-293ACEB7B307} = {80AB7D9A-5CFE-48A7-AC35-342D844022C9}
+		{09684F4C-6824-4A5F-9B8B-7AEAD55707AD} = {260C5B19-5D63-46CA-AAFD-A51F818A3A4B}
+		{E59CF786-4758-4B9F-9F4E-DD4F8D8B83AF} = {260C5B19-5D63-46CA-AAFD-A51F818A3A4B}
+		{941FCE7D-FD73-4178-9507-DC6C9EA3AB06} = {260C5B19-5D63-46CA-AAFD-A51F818A3A4B}
+		{B2D69EFD-DE0C-4813-8F62-E89553C80D92} = {275742D3-EE76-4CB5-8C62-9831830A0B09}
+		{6FAF0285-1232-484D-A883-BD3B03F493BE} = {275742D3-EE76-4CB5-8C62-9831830A0B09}
+		{49E139AF-9DF2-4CC2-B44D-EA723F273519} = {275742D3-EE76-4CB5-8C62-9831830A0B09}
+		{EC87CC8F-5E64-423E-B500-E12BEBA5C5BB} = {F7522225-B9BF-46A4-9948-5E6AC0B30A8C}
+		{94F73103-F448-48F9-AC1C-CE72515BC7BF} = {F7522225-B9BF-46A4-9948-5E6AC0B30A8C}
+		{F941C1B2-D3D4-4B59-85E4-8429DEE8912A} = {F7522225-B9BF-46A4-9948-5E6AC0B30A8C}
+		{9AA3BFA4-D34B-4F85-A772-724D6272D702} = {FFC19ECE-F7D4-4EFC-B383-B5FDBD4BC164}
+		{83D41E77-D924-458E-A3CA-FDF2A20827E8} = {FFC19ECE-F7D4-4EFC-B383-B5FDBD4BC164}
+		{78C4F872-64F4-4588-A716-B636D4A89A32} = {FFC19ECE-F7D4-4EFC-B383-B5FDBD4BC164}
+	EndGlobalSection
+EndGlobal
