@@ -11,6 +11,8 @@ using Coffee.Controllers;
 using Coffee.Controllers.Helpers;
 using Coffee.Shared.Configuration;
 using Coffee.Web.App_Start;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 using StructureMap;
 
 namespace Coffee.Web
@@ -35,12 +37,25 @@ namespace Coffee.Web
 
             ObjectFactory.Container.Inject(typeof(IHttpControllerActivator), new StructureMapHttpControllerActivator(ObjectFactory.Container));
             GlobalConfiguration.Configuration.DependencyResolver = new IoCContainer(ObjectFactory.Container);
+            GlobalConfiguration.Configuration.Formatters.JsonFormatter.SerializerSettings = new JsonSerializerSettings
+                                                                                                {
+                                                                                                    ContractResolver =
+                                                                                                        new LowercaseContractResolver
+                                                                                                        ()
+                                                                                                };
             AreaRegistration.RegisterAllAreas();
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+        }
+    }
+    public class LowercaseContractResolver : DefaultContractResolver
+    {
+        protected override string ResolvePropertyName(string propertyName)
+        {
+            return propertyName.ToLower();
         }
     }
 

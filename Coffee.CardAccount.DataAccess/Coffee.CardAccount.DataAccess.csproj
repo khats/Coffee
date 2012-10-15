@@ -43,8 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CardAccountRepository.cs" />
     <Compile Include="ICardAccountRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Coffee.CardAccount.Domain\Coffee.CardAccount.Domain.csproj">
+      <Project>{94F73103-F448-48F9-AC1C-CE72515BC7BF}</Project>
+      <Name>Coffee.CardAccount.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Coffee.Shared\Coffee.Shared.csproj">
+      <Project>{38573BD0-C4E7-49BE-A90A-D0DDC46B6F79}</Project>
+      <Name>Coffee.Shared</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

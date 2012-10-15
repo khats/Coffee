@@ -9,49 +9,56 @@ namespace Coffee.Controllers
 {
     public class CardAccountController : ApiController, ICardAccountService
     {
+        private readonly ICardAccountService _cardAccountService;
+
+        public CardAccountController(ICardAccountService cardAccountService)
+        {
+            _cardAccountService = cardAccountService;
+        }
+
         public ResponseResult<IEnumerable<PaymentSystem>> EnumeratePaymentSystem()
         {
-            throw new NotImplementedException();
+            return _cardAccountService.EnumeratePaymentSystem();
         }
 
         public ResponseResult<Guid> CreatePaymentSystem(string name, string logo, decimal commission, int binCode)
         {
-            throw new NotImplementedException();
+            return _cardAccountService.CreatePaymentSystem(name, logo, commission, binCode);
         }
 
         public ResponseResult UpdatePaymentSystem(Guid paymentSystemId, string name, string logo, decimal commission)
         {
-            throw new NotImplementedException();
+            return _cardAccountService.UpdatePaymentSystem(paymentSystemId, name, logo, commission);
         }
 
         public ResponseResult DeletePaymentSystem(Guid paymentSystemId)
         {
-            throw new NotImplementedException();
+            return _cardAccountService.DeletePaymentSystem(paymentSystemId);
         }
 
         public ResponseResult<long> CreateCardAccount(Guid userId, Guid paymentSystemId, string currencyCode)
         {
-            throw new NotImplementedException();
+            return _cardAccountService.CreateCardAccount(userId, paymentSystemId, currencyCode);
         }
 
         public ResponseResult BlockCardAccount(long cardAccountId)
         {
-            throw new NotImplementedException();
+            return _cardAccountService.BlockCardAccount(cardAccountId);
         }
 
         public ResponseResult UnBlockCardAccount(long cardAccountId)
         {
-            throw new NotImplementedException();
+            return _cardAccountService.UnBlockCardAccount(cardAccountId);
         }
 
         public ResponseResult<IEnumerable<FullDescriptionCardAccount>> EnumerateCardAccount()
         {
-            throw new NotImplementedException();
+            return _cardAccountService.EnumerateCardAccount();
         }
 
         public ResponseResult<IEnumerable<DescriptionCardAccount>> EnumerateClientCardAccount(Guid userId)
         {
-            throw new NotImplementedException();
+            return _cardAccountService.EnumerateClientCardAccount(userId);
         }
     }
 }

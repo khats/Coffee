@@ -5,18 +5,20 @@
     using System.Data;
     using System.Data.SqlClient;
     using System.Globalization;
-    using System.IO;
-    using System.Linq;
 
     using Coffee.Shared.Helper;
 
     public class HelpService : IHelpService
     {
+        private readonly string _connectionString;
+
         private readonly ISharedHelper _helper;
 
         public HelpService(ISharedHelper helper)
         {
             _helper = helper;
+            _connectionString = "Data Source=195.50.21.74;Initial Catalog=Coffee;Persist Security Info=True;"
+                                + "User ID=database;Password=5E43zdwNKV";
         }
 
         #region Implementation of IHelpService
@@ -26,17 +28,18 @@
             var dataTable = new DataTable("Codes");
             dataTable.Columns.Add("CodeNumber", typeof(byte));
             dataTable.Columns.Add("CodeValue", typeof(string));
-            var pins = new Dictionary<byte, int>();
+            var pins = new Dictionary<byte, string>();
             var random = new Random();
-            for (byte i = 0; i < 40; i++)
+            for (byte i = 1; i < 41; i++)
             {
                 var pin = random.Next(1000, 9999);
-                pins.Add(i, pin);
-                dataTable.Rows.Add(i, this._helper.ComputeHashFromString(pin.ToString(CultureInfo.InvariantCulture)));
+                var stringPin = pin.ToString(CultureInfo.InvariantCulture);
+                pins.Add(i, stringPin);
+                dataTable.Rows.Add(i, this._helper.ComputeHashFromString(stringPin));
             }
 
             int r;
-            using (var connection = new SqlConnection())
+            using (var connection = new SqlConnection(_connectionString))
             {
                 using (var command = connection.CreateCommand())
                 {
@@ -52,14 +55,35 @@
                 }
             }
 
-            if (r == 1)
+            if (r != 1)
             {
-                var filename = Path.Combine("c:\\", userId.ToString("N"), ".txt");
-                File.WriteAllLines(filename, pins.Select(x => string.Concat(x.Key, " - ", x.Value)));
+                throw new Exception();
             }
-            else
+
+            using (var connection = new SqlConnection(this._connectionString))
             {
-                // TODO log error
+                connection.Open();
+                using (var command = connection.CreateCommand())
+                {
+                    command.CommandText = "DELETE FROM OpenCodes WHERE UserId = @userId";
+                    command.Parameters.AddWithValue("@userId", userId).SqlDbType = SqlDbType.UniqueIdentifier;
+                    command.ExecuteNonQuery();
+                }
+
+                using (var command = connection.CreateCommand())
+                {
+                    command.CommandText =
+                        "INSERT INTO OpenCodes(UserId, CodeId, Code) VALUES(@userId, @codeId, @codeVal)";
+                    command.Parameters.AddWithValue("@userId", userId).SqlDbType = SqlDbType.UniqueIdentifier;
+                    var codeParam = command.Parameters.Add("@codeId", SqlDbType.TinyInt);
+                    var valParam = command.Parameters.Add("@codeVal", SqlDbType.NChar, 4);
+                    foreach (var pin in pins)
+                    {
+                        codeParam.Value = pin.Key;
+                        valParam.Value = pin.Value;
+                        command.ExecuteNonQuery();
+                    }
+                }
             }
         }
 

@@ -39,6 +39,11 @@ EndProject
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Coffee.ModelingProject", "Coffee.ModelingProject\Coffee.ModelingProject.modelproj", "{92725DD6-B42B-4DB6-B2F5-4DB66C036534}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{D91EF530-C697-474D-AA25-F7AB4F258626}"
+	ProjectSection(SolutionItems) = preProject
+		Coffee.Web\Web.config = Coffee.Web\Web.config
+		Coffee.Web\Web.Debug.config = Coffee.Web\Web.Debug.config
+		Coffee.Web\Web.Release.config = Coffee.Web\Web.Release.config
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HelpDesk", "HelpDesk", "{80AB7D9A-5CFE-48A7-AC35-342D844022C9}"
 EndProject

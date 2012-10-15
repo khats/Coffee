@@ -1,42 +1,19 @@
-﻿<!doctype html>
-<html>
-<head>
-    <title>Login
-    </title>
-    <link href="../Content/bootstrap.css" type="text/css" rel="stylesheet" />
-    <link href="../Content/main.css" type="text/css" rel="stylesheet" />
-    <script type="text/javascript" src="../Scripts/lib/jquery-1.8.2.js"></script>
-    <script type="text/javascript" src="../Scripts/lib/bootstrap.js"></script>
-</head>
-<body>
-    <div id="login-page">
-        <div class="navbar">
-            <div class="navbar-inner">
-                <div class="container">
-                    <a class="brand" href="main.html">Super bank</a>
-                </div>
-            </div>
-        </div>
-        <div id="errors"></div>
-        <form class="form-horizontal">
-            <div class="control-group">
-                <label class="control-label" for="inputEmail">Email</label>
-                <div class="controls">
-                    <input type="text" id="inputEmail" placeholder="Email">
-                </div>
-            </div>
-            <div class="control-group">
-                <label class="control-label" for="inputPassword">Password</label>
-                <div class="controls">
-                    <input type="password" id="inputPassword" placeholder="Password">
-                </div>
-            </div>
-            <div class="control-group">
-                <div class="controls">
-                    <a href="login-pin.html" class="btn offset1">Next step &raquo;</a>
-                </div>
-            </div>
-        </form>
-    </div>
-</body>
-</html>
+﻿<div id="login-page">
+    <a href="#main">back</a>
+    <div id="errors"></div>
+    <form>
+        <table>
+            <tr>
+                <td>Login</td>
+                <td>
+                    <input type="text" name="Login"/></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="password" name="Password"/></td>
+            </tr>
+        </table>
+    </form>
+    <input type="button" id="confirm" value="Continue"/>
+</div>

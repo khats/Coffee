@@ -1,0 +1,16 @@
+﻿<div id="cards-page">
+    <div data-bind="template: {name:'auth-nav'}">
+    </div>
+    <div class="span4">
+        <h3>Currencies</h3>
+        <table class="table table-striped table-bordered">
+            <thead>
+                <td>Currency</td>
+                <td>Buy</td>
+                <td>Sell</td>
+            </thead>
+            <tbody id="cards-table-body" data-bind="template:{name:'currency', foreach: currencies}">
+            </tbody>
+        </table>
+    </div>
+</div>

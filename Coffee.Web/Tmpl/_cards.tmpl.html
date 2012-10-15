@@ -1,0 +1,18 @@
+﻿<div id="cards-page">
+    <div data-bind="template: {name:'auth-nav'}">
+    </div>
+    <div class=" span5">
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <td>#</td>
+                    <td>Currency</td>
+                    <td>Payment System</td>
+                </tr>
+            </thead>
+            <tbody id="cards-table-body" data-bind="template:{name:'cards-item', foreach:cards}">
+            </tbody>
+        </table>
+        <a class="btn">Add card</a>
+    </div>
+</div>

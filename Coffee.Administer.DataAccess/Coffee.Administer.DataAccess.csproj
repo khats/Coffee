@@ -48,6 +48,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Coffee.Account.DataAccess\Coffee.Account.DataAccess.csproj">
+      <Project>{e59cf786-4758-4b9f-9f4e-dd4f8d8b83af}</Project>
+      <Name>Coffee.Account.DataAccess</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Coffee.Administer.Domain\Coffee.Administer.Domain.csproj">
       <Project>{6FAF0285-1232-484D-A883-BD3B03F493BE}</Project>
       <Name>Coffee.Administer.Domain</Name>

@@ -48,6 +48,7 @@ namespace Coffee.Web.App_Start
                     "~/Scripts/lib/koExternalTemplateEngine.js",
 
                     // Other 3rd party libraries
+                    "~/Scripts/lib/bootstrap.min.js",
                     "~/Scripts/lib/underscore.js",
                     "~/Scripts/lib/moment.js",
                     "~/Scripts/lib/sammy.*",

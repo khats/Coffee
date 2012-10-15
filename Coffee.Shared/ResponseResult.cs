@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Coffee.Shared
+﻿namespace Coffee.Shared
 {
     public class ResponseResult<T> : ResponseResult
     {
         public ResponseResult(string errorMessage)
         {
+            IsSuccess = false;
             ErrorMessage = errorMessage;
         }
 
@@ -26,6 +21,7 @@ namespace Coffee.Shared
     {
         public ResponseResult(string errorMessage)
         {
+            IsSuccess = false;
             ErrorMessage = errorMessage;
         }
 

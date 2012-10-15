@@ -1,4 +1,4 @@
-﻿define('helpers',[], function () {
+﻿define('helpers', [], function () {
     /*
     Api requests
 */
@@ -24,6 +24,10 @@
         }
     };
 
+    $(window).on('hashchange', function () {
+        var hash = getHash();
+        hash != '' && require([hash], function (o) { o.call(); });
+    });
     /*
         Helpers
     */
@@ -49,5 +53,5 @@
         $(window).trigger('hashchange');
     }
 
-    return { sFormat: sFormat, apiUrls:reqApi.templates};
+    return { sFormat: sFormat, apiUrls: reqApi.templates, getHash:getHash };
 });

@@ -147,20 +147,21 @@
     <Content Include="Content\toastr-responsive.css" />
     <Content Include="Content\toastr.css" />
     <Content Include="Global.asax" />
-    <Content Include="html\card.html" />
-    <Content Include="html\cards.html" />
-    <Content Include="html\home.html" />
-    <Content Include="html\login.html" />
-    <Content Include="html\login-pin.html" />
-    <Content Include="Scripts\app\main.js" />
+    <Content Include="Scripts\app\cards.js" />
+    <Content Include="Scripts\app\home.js" />
+    <Content Include="Scripts\app\login-pin.js" />
+    <Content Include="Scripts\app\login.js" />
+    <Content Include="Tmpl\_auth-nav.tmpl.html" />
+    <Content Include="Tmpl\_cards-item.tmpl.html" />
+    <Content Include="Tmpl\_cards.tmpl.html" />
+    <Content Include="Tmpl\_currency.tmpl.html" />
+    <Content Include="Tmpl\_home.tmpl.html" />
+    <Content Include="Tmpl\_login-pin.tmpl.html" />
     <Content Include="Tmpl\_main.tmpl.html" />
-    <Content Include="html\news-item.html" />
     <Content Include="html\register.html" />
     <Content Include="js\bootstrap.min.js" />
-    <Content Include="js\Copy of main.js" />
     <Content Include="js\helpers.js" />
-    <Content Include="js\main.js" />
-    <Content Include="Scripts\app\bootstraper.js" />
+    <Content Include="Scripts\app\main.js" />
     <Content Include="Scripts\app\config.js" />
     <Content Include="Scripts\app\dataservice.js" />
     <Content Include="Scripts\app\helpers.js" />
@@ -188,9 +189,10 @@
     <Content Include="Scripts\lib\sammy.title.js" />
     <Content Include="Scripts\lib\toastr.js" />
     <Content Include="Scripts\lib\TrafficCop.js" />
-    <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\mmain.js" />
     <Content Include="Scripts\lib\moment.js" />
     <Content Include="Scripts\lib\underscore.js" />
+    <Content Include="Tmpl\_unauth-nav.tmpl.html" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -204,6 +206,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\app\dataservice.test.js" />
     <Content Include="Tmpl\_news-item.tmpl.html" />
+    <Content Include="Tmpl\_login.tmpl.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

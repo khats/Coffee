@@ -48,6 +48,10 @@
       <Project>{09684F4C-6824-4A5F-9B8B-7AEAD55707AD}</Project>
       <Name>Coffee.Account.Domain</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Coffee.Administer.Domain\Coffee.Administer.Domain.csproj">
+      <Project>{6FAF0285-1232-484D-A883-BD3B03F493BE}</Project>
+      <Name>Coffee.Administer.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Coffee.Shared\Coffee.Shared.csproj">
       <Project>{38573BD0-C4E7-49BE-A90A-D0DDC46B6F79}</Project>
       <Name>Coffee.Shared</Name>

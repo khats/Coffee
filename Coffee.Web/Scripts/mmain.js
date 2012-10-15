@@ -15,7 +15,11 @@
                 'ko.debug.helpers'
         ], boot);
     
-    function boot() {
-        require(['bootstraper'], function () {});
+        function boot() {
+            require(['config','infuser'],function() {
+                require(['helpers'], function (hlp) {
+                     hlp.getHash() != '' ? $(window).trigger('hashchange') : require(['main'], function(m) { m.call(); });
+                });
+            });
     }
 })();

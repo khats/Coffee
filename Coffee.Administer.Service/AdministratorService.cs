@@ -1,6 +1,7 @@
 namespace Coffee.Administer.Service
 {
     using System;
+    using System.Collections.Generic;
 
     using Coffee.Administer.DataAccess;
     using Coffee.Administer.Domain;
@@ -8,6 +9,7 @@ namespace Coffee.Administer.Service
     using Coffee.Shared.Helper;
     using Coffee.Shared.Logging;
 
+    [LoggingIdAttribute("AdministratorService")]
     public class AdministratorService : IAdministratorService
     {
         private readonly ILoggingService _loggingService;
@@ -28,7 +30,7 @@ namespace Coffee.Administer.Service
 
         #region Implementation of IAdministratorService
 
-        public ResponseResult<bool> CreateUser(UserInfoCreation userInfo)
+        public ResponseResult CreateUser(UserInfo userInfo)
         {
             try
             {
@@ -38,15 +40,70 @@ namespace Coffee.Administer.Service
                     string.IsNullOrWhiteSpace(userInfo.Login) || !_helper.ValidatePhone(userInfo.Mobile) ||
                     !_helper.ValidatePhone(userInfo.Phone) || string.IsNullOrWhiteSpace(userInfo.Zip))
                 {
-                    return new ResponseResult<bool>("Неверные входные данные");
+                    return new ResponseResult("Неверные входные данные");
                 }
 
-                return new ResponseResult<bool>(_administratorRepository.CreateUser(userInfo));
+                return new ResponseResult { IsSuccess = _administratorRepository.CreateUser(userInfo) };
             }
             catch (Exception exception)
             {
                 _loggingService.Log(this, CreateUserException, LogType.Error, exception);
                 return new ResponseResult<bool>(CreateUserException);
+            }
+        }
+
+        public ResponseResult<IEnumerable<UserInfoShort>> EnumerateClients(
+            string fio, string login, int pageNumber, int countPerPage)
+        {
+
+            try
+            {
+                return
+                    new ResponseResult<IEnumerable<UserInfoShort>>(
+                        _administratorRepository.EnumerateClients(fio, login, pageNumber, countPerPage));
+            }
+            catch (Exception e)
+            {
+                const string ErrorMessage = "Не удалось получить клиентов.";
+                _loggingService.Log(this, ErrorMessage, LogType.Error, e);
+                return new ResponseResult<IEnumerable<UserInfoShort>>(ErrorMessage);
+            }
+        }
+
+        public ResponseResult<UserInfo> GetUser(Guid userId)
+        {
+            try
+            {
+                return new ResponseResult<UserInfo>(_administratorRepository.GetUser(userId));
+            }
+            catch (Exception e)
+            {
+                const string ErrorMessage = "Не удалось получить пользователя";
+                _loggingService.Log(this, ErrorMessage, LogType.Error, e);
+                return new ResponseResult<UserInfo>(ErrorMessage);
+            }
+        }
+
+        public ResponseResult UpdateUserInfo(UserInfo userInfo)
+        {
+            try
+            {
+                if (userInfo == null || userInfo.UserId == Guid.Empty || string.IsNullOrWhiteSpace(userInfo.Address) ||
+                    string.IsNullOrWhiteSpace(userInfo.Zip) || string.IsNullOrWhiteSpace(userInfo.Country) ||
+                    string.IsNullOrWhiteSpace(userInfo.Fio) || string.IsNullOrWhiteSpace(userInfo.Login) ||
+                    !_helper.ValidatePhone(userInfo.Mobile) || !_helper.ValidatePhone(userInfo.Phone) ||
+                    !_helper.ValidateEmail(userInfo.Email))
+                {
+                    return new ResponseResult("Неверные входные данные.");
+                }
+
+                return new ResponseResult { IsSuccess = false };
+            }
+            catch (Exception e)
+            {
+                const string ErrorMessage = "Не удалось обновить информацию о пользователе.";
+                _loggingService.Log(this, ErrorMessage, LogType.Error, e);
+                return new ResponseResult(ErrorMessage);
             }
         }
 
